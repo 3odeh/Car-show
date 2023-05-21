@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:onClick="cardViewOnClick"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    app:cardCornerRadius="@dimen/custom_car_radius"
+    app:cardElevation="@dimen/custom_card_elevation"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/custom_car_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_car_iv_height"
+            android:background="#FFFFFF"
+            android:backgroundTint="@color/primary"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_race_car_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/custom_car_tv_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="32dp"
+            android:gravity="start|top|left"
+            android:text="@string/custom_car_tv_model_text"
+            android:textColor="@color/custom_car_tv_color"
+            android:textSize="@dimen/custom_car_tv_textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_car_iv" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_car_tv_model"
+            tools:layout_editor_absoluteX="141dp">
+
+            <TextView
+                android:id="@+id/custom_car_tv_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/custom_car_tv_color_text"
+                android:textColor="@color/custom_car_tv_color"
+                android:textSize="@dimen/custom_car_tv_textSize" />
+
+            <TextView
+                android:id="@+id/custom_car_tv_dpl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/custom_car_tv_dpl_text"
+                android:textColor="@color/custom_car_tv_color"
+                android:textSize="@dimen/custom_car_tv_textSize" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

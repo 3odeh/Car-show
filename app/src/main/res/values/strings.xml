@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Cars</string>
+    <string name="ed_details_model_hint">Model</string>
+    <string name="ed_details_color_hint">Color</string>
+    <string name="ed_details_des_hint">Description</string>
+    <string name="ed_details_dpl_hint">Distance per Letter</string>
+    <string name="hi">Hi</string>
+    <string name="custom_car_tv_model_text">Model</string>
+    <string name="custom_car_tv_color_text">Color</string>
+    <string name="custom_car_tv_dpl_text">DPL</string>
+    <string name="main_menu_search_title">Search</string>
+    <string name="app_label">label</string>
+    <string name="search_hint">search</string>
+    <string name="detail_menu_save_title">Save</string>
+    <string name="detail_menu_delete_title">Delete</string>
+    <string name="detail_menu_edit_title">Edit</string>
+</resources>
